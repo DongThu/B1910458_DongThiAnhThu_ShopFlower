@@ -13,13 +13,13 @@
 
             <div class="box">
                 <h3>Chủ đề</h3>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> Hoa trang trí</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> Hoa cưới</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> Hoa Tặng Dịp Lễ</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> Sen đá
+                <router-link @click="scrollToTop()" to="/list"><i class="fas fa-arrow-right"></i> Hoa trang trí</router-link>
+                <router-link @click="scrollToTop()" to="/list"><i class="fas fa-arrow-right"></i> Hoa cưới</router-link>
+                <router-link @click="scrollToTop()" to="/list"><i class="fas fa-arrow-right"></i> Hoa Tặng Dịp Lễ</router-link>
+                <router-link @click="scrollToTop()" to="/list"><i class="fas fa-arrow-right"></i> Sen đá
                 </router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> Phụ kiện</router-link>
-                <router-link @click="scrollToTop()" to="/menu"><i class="fas fa-arrow-right"></i> Dụng cụ trồng hoa</router-link>
+                <router-link @click="scrollToTop()" to="/list"><i class="fas fa-arrow-right"></i> Phụ kiện</router-link>
+                <router-link @click="scrollToTop()" to="/list"><i class="fas fa-arrow-right"></i> Dụng cụ trồng hoa</router-link>
             </div>
 
             <div class="box">
@@ -28,7 +28,7 @@
                 <router-link @click="scrollToTop()" to="/about"> <i class="fas fa-arrow-right"></i> Giới thiệu</router-link>
                 <!-- <router-link @click="scrollToTop()" to="/promotions"> <i class="fas fa-arrow-right"></i> promotions -->
                 <!-- </router-link> -->
-                <router-link @click="scrollToTop()" to="/menu"> <i class="fas fa-arrow-right"></i>Sản phẩm</router-link>
+                <router-link @click="scrollToTop()" to="/list"> <i class="fas fa-arrow-right"></i>Sản phẩm</router-link>
                 <!-- <router-link @click="scrollToTop()" to="/table"> <i class="fas fa-arrow-right"></i> book a table -->
                 <!-- </router-link> -->
             </div>

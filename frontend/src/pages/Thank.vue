@@ -24,7 +24,7 @@
                 vì vậy chúng tôi luôn có thể cung cấp cho bạn những sản phẩm tốt nhất
                 kinh nghiệm.
             </p>
-            <router-link class="btn" to="/menu">Tiếp tục mua hàng</router-link>
+            <router-link class="btn" to="/list">Tiếp tục mua hàng</router-link>
         </div>
     </div>
 </template>

@@ -7,13 +7,13 @@
             <router-link @click="scrollToTop()" to="/">Trang chủ</router-link>
             <router-link @click="scrollToTop()" to="/about">Giới thiệu</router-link>
             <!-- <router-link @click="scrollToTop()" to="/promotions">promotions</router-link> -->
-            <router-link @click="scrollToTop()" to="/menu">Sản phẩm</router-link>
+            <router-link @click="scrollToTop()" to="/list">Sản phẩm</router-link>
 
             <!-- <router-link @click="scrollToTop()" to="/table">Đặt hoa theo yêu cầu</router-link> -->
         </nav>
 
         <div class="icons">
-            <div id="menu-btn" class="fas fa-bars menu-btn" @click="showNav"></div>
+            <div id="list-btn" class="fas fa-bars list-btn" @click="showNav"></div>
             <router-link @click="scrollToTop()" to="cart">
                 <div class="fas fa-shopping-cart cart"></div>
             </router-link>
@@ -158,7 +158,7 @@ export default {
     color: white;
 }
 
-#menu-btn {
+#list-btn {
     display: none;
 }
 
@@ -235,7 +235,7 @@ export default {
         display: block;
     }
 
-    #menu-btn {
+    #list-btn {
         display: inline-block;
     }
 

@@ -72,7 +72,7 @@
             <div>
                 <img src="../assets/images/no-orders.png" alt="" />
             </div>
-            <router-link class="btn" to="/menu">Đặt ngay!</router-link>
+            <router-link class="btn" to="/list">Đặt ngay!</router-link>
         </div>
 
         <OrderDetails v-if="showOrderDetails" :bill="sendId">

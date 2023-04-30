@@ -3,9 +3,9 @@ import Login from '../pages/Login.vue';
 import Register from '../pages/Register.vue';
 import Home from '../pages/Home.vue';
 import About from '../pages/About.vue';
-import Promo from '../pages/Promo.vue';
-import Menu from '../pages/Menu.vue';
-import Table from '../pages/Table.vue';
+// import Promo from '../pages/Promo.vue';
+import List from '../pages/List.vue';
+// import Table from '../pages/Table.vue';
 import Cart from '../pages/Cart.vue';
 import Checkout from '../pages/Checkout.vue';
 import Thank from '../pages/Thank.vue';
@@ -25,21 +25,21 @@ const routes = [
     name: "About",
     component: About,
   },
+  // {
+  //   path: "/promotions",
+  //   name: "Promotions",
+  //   component: Promo,
+  // },
   {
-    path: "/promotions",
-    name: "Promotions",
-    component: Promo,
+    path: "/list",
+    name: "List",
+    component: List,
   },
-  {
-    path: "/menu",
-    name: "Menu",
-    component: Menu,
-  },
-  {
-    path: "/table",
-    name: "Table",
-    component: Table,
-  },
+  // {
+  //   path: "/table",
+  //   name: "Table",
+  //   component: Table,
+  // },
   {
     path: "/cart",
     name: "Cart",

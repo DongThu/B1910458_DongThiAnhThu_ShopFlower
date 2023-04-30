@@ -32,7 +32,7 @@
                 <slot></slot>
             </h2>
             <div class="link-to-login" style="text-align: center; margin-top: 120px;">
-                <router-link class="btn" to="/login" style="padding: 28px; font-size: 24px">login now
+                <router-link class="btn" to="/login" style="padding: 28px; font-size: 24px">Đăng nhập
                 </router-link>
             </div>
         </div>

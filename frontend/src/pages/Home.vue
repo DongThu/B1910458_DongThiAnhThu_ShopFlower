@@ -7,7 +7,7 @@
                 <p>Vẻ đẹp của hoa mang đến sự tươi mới, chữa lành tâm hồn chúng ta!
                     Cùng nhau ngắm nhìn những điều tốt đẹp ấy nào!
                 </p>
-                <router-link @click="scrollToTop()" to="/menu" class="btn">Đặt hàng ngay!</router-link>
+                <router-link @click="scrollToTop()" to="/list" class="btn">Đặt hàng ngay!</router-link>
             </div>
             <div class="image">
                 <img  style=" width: 600px; height: 250px;" src="../assets/images/bouquet-1.jpg" alt="" class="home-img" >
@@ -17,32 +17,32 @@
 
 
         <div class="home-category">
-            <router-link @click="scrollToTop()" to="/menu" class="box">
+            <router-link @click="scrollToTop()" to="/list" class="box">
                 <img src="../assets/images/tulips/hoa-tulip-hong.jpg" alt="">
                 <h3>Hoa trang trí</h3>
             </router-link>
 
-            <router-link @click="scrollToTop()" to="/menu" class="box">
+            <router-link @click="scrollToTop()" to="/list" class="box">
                 <img src="../assets/images/hoacuoi/hoacuoi-8.png" alt="">
                 <h3>Hoa cưới</h3>
             </router-link>
 
-            <router-link @click="scrollToTop()" to="/menu" class="box">
+            <router-link @click="scrollToTop()" to="/list" class="box">
                 <img src="../assets/images/SunFlower/Bó-Hoa-Hướng-Dương.jpg" alt="">
                 <h3>Hoa tặng dịp lễ</h3>
             </router-link>
 
-            <router-link @click="scrollToTop()" to="/menu" class="box">
+            <router-link @click="scrollToTop()" to="/list" class="box">
                 <img src="../assets/images/senda/sen-da-1.jpg" alt="">
                 <h3>Sen đá</h3>
             </router-link>
 
-            <router-link @click="scrollToTop()" to="/menu" class="box">
+            <router-link @click="scrollToTop()" to="/list" class="box">
                 <img src="../assets/images/phukien/phu-kien1.jpg" alt="">
                 <h3>Phụ kiện</h3>
             </router-link>
 
-            <router-link @click="scrollToTop()" to="/menu" class="box">
+            <router-link @click="scrollToTop()" to="/list" class="box">
                 <img src="../assets/images/hatgiong/hatgiong-4.jpg" alt="">
                 <h3>Hạt giống</h3>
             </router-link>
@@ -55,7 +55,7 @@
                     <div class="content">
                         <!-- <span>special offer</span>
                         <h3>upto 50% off</h3> -->
-                        <!-- <router-link @click="scrollToTop()" to="/menu" class="btn">Đặt ngay!</router-link> -->
+                        <!-- <router-link @click="scrollToTop()" to="/list" class="btn">Đặt ngay!</router-link> -->
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@
                     <div class="content center">
                         <!-- <span>special offer</span>
                         <h3>upto 25% extra</h3> -->
-                        <!-- <router-link @click="scrollToTop()" to="/menu" class="btn">Đặt ngay!</router-link> -->
+                        <!-- <router-link @click="scrollToTop()" to="/list" class="btn">Đặt ngay!</router-link> -->
                     </div>
                 </div>
 
@@ -73,7 +73,7 @@
                     <div class="content">
                         <!-- <span>limited offer</span>
                         <h3>100% cashback</h3> -->
-                        <!-- <router-link @click="scrollToTop()" to="/menu" class="btn">Đặt ngay!</router-link> -->
+                        <!-- <router-link @click="scrollToTop()" to="/list" class="btn">Đặt ngay!</router-link> -->
                     </div>
                 </div>
 
@@ -366,7 +366,7 @@ export default {
 }
 
 @media (max-width: 768px) {
-    #menu-btn {
+    #list-btn {
         display: inline-block;
     }
 

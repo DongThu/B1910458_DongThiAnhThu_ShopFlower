@@ -85,7 +85,7 @@
                         </div>
 
                         <div class="box-content row">
-                            <router-link to="/menu" class="btn shop-btn"><i class="fa fa-arrow-left"></i>Tiếp tục mua sắm</router-link>
+                            <router-link to="/list" class="btn shop-btn"><i class="fa fa-arrow-left"></i>Tiếp tục mua sắm</router-link>
                             <button class="btn check-out-btn" style="margin-left: 10px;"
                                 :disabled="filterFlowers.length ? false : true" @click="checkOutBtn()"><i
                                     class="fa fa fa-shopping-cart"></i>Mua hàng</button>
