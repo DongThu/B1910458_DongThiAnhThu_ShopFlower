@@ -24,16 +24,6 @@
                                     value="Best Seller">X</button></label>
                         </li>
 
-
-                        <!-- <li>
-                            <input type="button" name="cbStatus" id="ooStatus" value="Online Only" hidden
-                                @click="filterStatusBtn($event)" />
-                            <label for="ooStatus" class="d-flex justify-content-between">Online Only <button
-                                    class="unselect-btn" @click="unselectStatusBtn($event)"
-                                    value="Online Only">X</button></label>
-                        </li> -->
-
-
                         <li>
                             <input type="button" name="cbStatus" id="soStatus" value="Sale Off" hidden
                                 @click="filterStatusBtn($event)" />

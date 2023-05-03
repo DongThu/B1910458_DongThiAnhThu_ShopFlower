@@ -1,113 +1,249 @@
--- database name: "db_restaurant"
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 03, 2023 at 04:18 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
-CREATE TABLE food( 
-    food_id INT(11) PRIMARY KEY AUTO_INCREMENT, 
-    food_name VARCHAR(255), 
-    food_star VARCHAR(255),
-    food_vote VARCHAR(255),
-    food_price VARCHAR(255),
-    food_discount VARCHAR(255),
-    food_desc VARCHAR(255),
-    food_status VARCHAR(255),
-    food_type VARCHAR(255),
-    food_category VARCHAR(255),
-    food_src VARCHAR(255)
-) ENGINE=INNODB;
-
-INSERT INTO food (food_name, food_star, food_vote, food_price, food_discount, food_desc, food_status, food_type, food_category, food_src)
-VALUES("carne asada tacos","4.5", "999", "12.00", "0.00", "03 pieces per serving", "best seller", "meat", "taco", "taco/taco-1.png"),
-("shrimp tacos","4.5", "999", "15.00", "3.00", "03 pieces per serving", "best seller", "meat", "taco", "taco/taco-2.png"),
-("barbacoa tacos","4.5","500","12.00","0.00","03 pieces per serving","best seller","meat","taco","taco/taco-3.png"),
-("tacos al pastor","4.5","999","13.00","2.00","03 pieces per serving","best seller","meat","taco","taco/taco-4.png"),
-("tinga tacos","4","500","11.00","0.00","03 pieces per serving","normal","meat","taco","taco/taco-5.png"),
-("campechanos tacos","4","500","11.00","1.00","03 pieces per serving","new dishes","meat","taco","taco/taco-6.png"),
-("carnitas tacos","4.5","500","14.00","2.00","03 pieces per serving","seasonal dishes online only","meat","taco","taco/taco-7.png"),
-("vegan tacos","4.5","100","9.00","2.00","03 pieces per serving","new dishes","vegan","taco","taco/taco-8.png"),
-("wet burrito","4.5","600","14.00","0.00","01 roll per serving","new dishes","meat","burrito","burrito/burrito-1.png"),
-("poncho burrito","4.5","999","15.00","3.00","01 roll per serving","best seller","meat","burrito","burrito/burrito-2.png"),
-("bean & cheese burrito","4.5","999","14.00","0.00","01 roll per serving","best seller","vegan","burrito","burrito/burrito-3.png"),
-("breakfast burrito","4.5","999","12.00","2.00","01 roll per serving","new dishes","meat","burrito","burrito/burrito-4.png"),
-("california burrito","4.5","999","14.00","0.00","01 roll per serving","best seller","meat","burrito","burrito/burrito-5.png"),
-("chimichanga","4","400","12.00","2.00","01 roll per serving","seasonal dishes","meat","burrito","burrito/burrito-6.png"),
-("nacho tots","4","699","12.00","2.00","01 tray per serving","best seller","meat","nachos","nachos/nachos-1.png"),
-("root beer pork nachos","4.5","999","12.00","0.00","01 tray per serving","best seller","meat","nachos","nachos/nachos-2.png"),
-("shrimp nachos","4.5","999","17.00","2.00","01 tray per serving","best seller","meat","nachos","nachos/nachos-3.png"),
-("chicken nachos","4.5","999","11.00","0.00","01 tray per serving","best seller","meat","nachos","nachos/nachos-4.png"),
-("only nachos","4","999","7.00","2.00","01 tray per serving","normal","vegan","nachos","nachos/nachos-5.png"),
-("pico de gallo","4.5","999","5.00","2.00","01 bowl per serving","best seller","vegan","nachos","nachos/salsa-1.png"),
-("salsa guille","4","699","5.00","2.00","01 bowl per serving","best seller","vegan","nachos","nachos/salsa-2.png"),
-("tomatillo salsa","4.5","499","5.00","2.00","01 bowl per serving","seasonal dishes","vegan","nachos","nachos/salsa-3.png"),
-("roasted tomato salsa","4.5","999","5.00","2.00","01 bowl per serving","best seller","vegan","nachos","nachos/salsa-4.png"),
-("guacamole","4.5","699","5.00","2.00","01 bowl per serving","best seller","vegan","nachos","nachos/salsa-5.png"),
-("corn salad","3.5","699","5.00","1.00","01 bowl per serving","new dishes seasonal dishes","vegan","sides","side/side-1.png"),
-("keto taquitos","4.5","999","9.00","0.00","05 pieces per serving","best seller","meat","sides","side/side-2.png"),
-("mexican rice","4","200","5.00","0.00","01 bowl per serving","normal","vegan","sides","side/side-3.png"),
-("cilantro lime rice","4","100","5.00","0.00","01 bowl per serving","new dishes","vegan","sides","side/side-4.png"),
-("chicken tortilla soup","3.5","299","10.00","2.00","01 bowl per serving","new dishes","meat","sides","side/side-5.png"),
-("Churros","4.5","999","7.00","0.00","05 pieces per serving","best seller","vegan","dessert","dessert/dessert-1.png"),
-("Fried Ice Cream","4.5","999","5.00","1.00","01 piece per serving","best seller","vegan","dessert","dessert/dessert-2.png"),
-("Dulce de Leche","4.5","50","4.00","0.00","01 bowl per serving","new dishes","vegan","dessert","dessert/dessert-3.png"),
-("Sweet Corn Cake","3","599","4.00","1.00","02 pieces per serving","seasonal dishes online only","vegan","dessert","dessert/dessert-4.png"),
-("Sopapillas","4","199","4.00","0.00","10 pieces per serving","normal","vegan","dessert","dessert/dessert-5.png"),
-("Conchas","4","299","5.00","0.00","10 pieces per serving","normal","vegan","dessert","dessert/dessert-6.png"),
-("Horchata","4.5","999","4.00","0.00","01 glass per serving","normal","vegan","dessert","dessert/dessert-7.png"),
-("Margarita","4.5","999","5.00","0.00","01 glass per serving","best seller","vegan","drink","drink/drink-1.png"),
-("Michelada","4.5","999","5.00","0.00","01 glass per serving","best seller","vegan","drink","drink/drink-2.png"),
-("paloma","4.5","599","5.00","0.00","01 glass per serving","new dishes seasonal dishes","vegan","drink","drink/drink-3.png"),
-("Atole","4","999","5.00","1.00","01 glass per serving","best seller","vegan","drink","drink/drink-4.png"),
-("fruit detox","3.5","999","3.00","0.00","01 glass per serving","seasonal dishes best seller","vegan","drink","drink/drink-5.png"),
-("Coca cola","4.5","9999","3.00","0.00","01 glass per serving","best seller","vegan","drink","drink/drink-6.png"); 
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
 
-CREATE TABLE user( 
-    user_id INT(11) PRIMARY KEY AUTO_INCREMENT, 
-    user_name VARCHAR(255), 
-    user_email VARCHAR(255),
-    user_phone VARCHAR(255),
-    user_password VARCHAR(255),
-    user_birth VARCHAR(255),
-    user_gender VARCHAR(255)
-) ENGINE=INNODB;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
+--
+-- Database: `db_shopflower`
+--
 
-CREATE TABLE cart (
-  user_id INT,
-  food_id INT,
-  item_qty INT,
-  primary key (user_id, food_id)
-);
+-- --------------------------------------------------------
 
+--
+-- Table structure for table `billdetails`
+--
 
-CREATE TABLE booktable( 
-    book_id INT(11) PRIMARY KEY AUTO_INCREMENT, 
-    book_name VARCHAR(255), 
-    book_phone VARCHAR(255),
-    book_people INT,
-    book_tables INT,
-    user_id INT,
-    book_when VARCHAR(255),
-    book_note TEXT
-) ENGINE=INNODB;
+CREATE TABLE `billdetails` (
+  `bill_id` int(11) NOT NULL,
+  `flower_id` int(11) NOT NULL,
+  `item_qty` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `billdetails`
+--
 
-CREATE TABLE billdetails (
-  bill_id INT,
-  food_id INT,
-  item_qty INT,
-  primary key (bill_id, food_id)
-);
+INSERT INTO `billdetails` (`bill_id`, `flower_id`, `item_qty`) VALUES
+(1, 9, 3),
+(2, 1, 1),
+(3, 1, 1),
+(4, 1, 1),
+(5, 1, 1),
+(6, 1, 1),
+(7, 1, 1),
+(7, 2, 1),
+(8, 1, 1),
+(9, 1, 1),
+(10, 1, 1),
+(11, 1, 1),
+(12, 1, 2);
 
-CREATE TABLE billstatus (
-  bill_id INT,
-  user_id INT,
-  bill_phone VARCHAR(255),
-  bill_address TEXT,
-  bill_when VARCHAR(255),
-  bill_method VARCHAR(255),
-  bill_discount INT,
-  bill_delivery INT,
-  bill_total INT,
-  bill_paid VARCHAR(255),
-  bill_status INT,
-  primary key (bill_id)
-);
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `billstatus`
+--
+
+CREATE TABLE `billstatus` (
+  `bill_id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `bill_phone` varchar(255) DEFAULT NULL,
+  `bill_address` text DEFAULT NULL,
+  `bill_when` varchar(255) DEFAULT NULL,
+  `bill_method` varchar(255) DEFAULT NULL,
+  `bill_discount` int(11) DEFAULT NULL,
+  `bill_delivery` int(11) DEFAULT NULL,
+  `bill_total` int(11) DEFAULT NULL,
+  `bill_paid` varchar(255) DEFAULT NULL,
+  `bill_status` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `billstatus`
+--
+
+INSERT INTO `billstatus` (`bill_id`, `user_id`, `bill_phone`, `bill_address`, `bill_when`, `bill_method`, `bill_discount`, `bill_delivery`, `bill_total`, `bill_paid`, `bill_status`) VALUES
+(1, 1, '84946830300', 'Cần Thơ', '2023-03-26T21:14', 'cash', 0, 15, 57, 'true', 6),
+(2, 1, '84946830300', 'Cần Thơ', '2023-03-27T12:45', 'cash', 0, 15, 500015, 'true', 6),
+(3, 1, '84946830300', 'Cần Thơ', '2023-03-27T12:55', 'card', 0, 15, 500015, 'true', 6),
+(4, 1, '84946830300', 'Cần Thơ', '2023-03-27T13:02', 'cash', 0, 15, 500015, 'true', 6),
+(5, 1, '84946830300', 'Cần Thơ', '2023-03-28T10:20', 'cash', 0, 15, 500015, 'true', 6),
+(6, 1, '84946830300', 'Cần Thơ', '2023-03-28T10:23', 'cash', 0, 15, 500015, 'true', 6),
+(7, 1, '84946830300', 'cần thơ', '2023-04-18T19:32', 'card', 20000, 15, 960015, 'false', 0),
+(8, 1, '84946830300', 'cần thơ', '2023-04-18T20:00', 'cash', 0, 15, 500015, 'true', 6),
+(9, 1, '84946830300', 'czbgfng', '2023-04-18T20:56', 'cash', 0, 15, 500015, 'true', 6),
+(10, 1, '84946830300', 'sdfd', '2023-05-01T22:45', 'cash', 0, 15, 500015, 'false', 0),
+(11, 1, '84946830300', 'ádf', '2023-05-01T22:49', 'card', 0, 15, 500015, 'false', 0),
+(12, 1, '84946830300', 'nbhkj', '2023-05-03T11:34', 'cash', 0, 15, 1000015, 'true', 6);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `user_id` int(11) NOT NULL,
+  `flower_id` int(11) NOT NULL,
+  `item_qty` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `flower`
+--
+
+CREATE TABLE `flower` (
+  `flower_id` int(11) NOT NULL,
+  `flower_name` varchar(255) DEFAULT NULL,
+  `flower_star` varchar(255) DEFAULT NULL,
+  `flower_vote` varchar(255) DEFAULT NULL,
+  `flower_price` varchar(255) DEFAULT NULL,
+  `flower_discount` varchar(255) DEFAULT NULL,
+  `flower_desc` varchar(255) DEFAULT NULL,
+  `flower_status` varchar(255) DEFAULT NULL,
+  `flower_type` varchar(255) DEFAULT NULL,
+  `flower_category` varchar(255) DEFAULT NULL,
+  `flower_src` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `flower`
+--
+
+INSERT INTO `flower` (`flower_id`, `flower_name`, `flower_star`, `flower_vote`, `flower_price`, `flower_discount`, `flower_desc`, `flower_status`, `flower_type`, `flower_category`, `flower_src`) VALUES
+(1, 'Đóa hồng', '4.5', '999', '500000', '0.00', '7 hoa hồng mỗi đóa', 'best seller', 'Hồng phấn ', 'Đóa hoa', 'doahoa/doa-1.png'),
+(2, 'Đóa cúc trắng', '4.5', '999', '480000', '20000', 'Đóa cỡ to', 'best seller', 'Cúc trắng baby', 'Đóa hoa', 'doahoa/doa-2.png'),
+(3, 'Hoa tiền', '4.5', '500', '800000', '0.00', 'Được làm từ tờ 20k', 'best seller', 'Tờ 20k', 'Đóa hoa', 'doahoa/doa-3.png'),
+(4, 'Đóa hồng baby', '4.5', '999', '300000', '20000', 'Kích cỡ trung bình', 'best seller', 'Baby hồng', 'Đóa hoa', 'doahoa/doa-4.png'),
+(5, 'Đóa hồng đỏ', '4', '500', '450000', '0.00', 'Trên 10 hoa', 'normal', 'Hồng đỏ Pháp', 'Đóa hoa', 'doahoa/doa-5.png'),
+(6, 'Đóa hồng ngoại Billet', '4', '500', '620000', '20000', 'Trên 10 hoa', 'new dishes', 'Hồng nhạt Billet', 'Đóa hoa', 'doahoa/doa-6.png'),
+(7, 'Đóa hướng dương', '4.5', '500', '300000', '20000', '3 hoa', 'seasonal dishes online only', 'Hướng Dương', 'Đóa hoa', 'doahoa/doa-7.png'),
+(8, 'Đóa cẩm tú cầu', '4.5', '100', '250000', '20000', '2 hoa kèm baby trắng', 'new dishes', 'cẩm tú cầu xanh', 'Đóa hoa', 'doahoa/doa-8.png'),
+(9, 'Hoa hồng trắng', '4.5', '600', '350000', '0.00', 'Kết hợp hoa baby hồng', 'new dishes', 'Hoa cưới', 'Hoa cưới', 'hoacuoi/hoacuoi-1.png'),
+(10, 'Tulip trắng', '4.5', '999', '550000', '30000', 'Bó theo yêu thích', 'best seller', 'Hoa cưới', 'Hoa cưới', 'hoacuoi/hoacuoi-2.png'),
+(11, 'Tulip và baby trắng', '4.5', '999', '400000', '0.00', 'nhỏ gọn, tinh tế', 'best seller', 'Hoa cưới', 'Hoa cưới', 'hoacuoi/hoacuoi-3.png'),
+(12, 'Tulip hồng', '4.5', '999', '405000', '20000', 'Nhập khẩu từ Pháp', 'new dishes', 'Hoa cưới', 'Hoa cưới', 'hoacuoi/hoacuoi-4.png'),
+(13, 'Hoa sen hồng', '4.5', '999', '560000', '0.00', 'Kết hợp baby trắng', 'best seller', 'Hoa cưới', 'Hoa cưới', 'hoacuoi/hoacuoi-5.png'),
+(14, 'Hoa hướng dương', '4', '400', '280000', '20000', 'Kết hợp hoa baby', 'seasonal dishes', 'Hoa cưới', 'Hoa cưới', 'hoacuoi/hoacuoi-6.png'),
+(15, 'Đế cắm', '4', '699', '50000', '12000', 'Hình tròn', 'best seller', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu-1.png'),
+(16, 'Giấy gói', '4.5', '999', '60000', '0.00', '6 màu cơ bản', 'best seller', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu-2.png'),
+(17, '3 bình hoa', '4.5', '', '270000', '20000', 'Kiểu hiện đại', 'best seller', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu-3.png'),
+(18, 'Đế đóa hoa', '4.5', '999', '45000', '0.00', 'Cỡ to', 'best seller', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu-4.png'),
+(19, 'Bình hoa', '4', '999', '200000', '20000', '3 màu  ', 'normal', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu-5.png'),
+(20, 'Giấy gói kèm ruy băng', '4.5', '999', '50000', '0', 'Màu đỏ và đen', 'best seller', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu1-1.png'),
+(21, '4 bình hoa', '4', '699', '400000', '20000', 'Kiểu bầu, cổ rộng', 'best seller', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu1-2.png'),
+(22, 'Kéo cắt cành', '4.5', '499', '80000', '10000', 'Bán nguyên set(8 cây)', 'seasonal dishes', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu1-3.png'),
+(23, 'Xốp cắm hoa', '4.5', '999', '10000', '0', 'Hình vuông', 'best seller', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu1-4.png'),
+(24, 'Xốp cắm hoa', '4.5', '699', '10000', '0', 'Hình tròn', 'best seller', 'Dụng cụ', 'Dụng cụ', 'dungcu/dungcu1-5.png'),
+(25, 'bộ dụng cụ trồng hoa', '3.5', '699', '70000', '10000', 'bằng gỗ', 'new dishes seasonal dishes', 'Hạt giống', 'Hạt giống', 'hatgiong/hatgiong-1.png'),
+(26, 'hạt giống cúc trắng', '4.5', '999', '85000', '0.00', 'Bán theo gói', 'best seller', 'Hạt giống', 'Hạt giống', 'hatgiong/hatgiong-2.png'),
+(27, 'Hạt giống cẩm tú cầu', '4.5', '200', '80000', '0.00', 'Bán theo gói', 'normal', 'Hạt giống', 'Hạt giống', 'hatgiong/hatgiong-3.png'),
+(28, 'Giống hoa tulip', '4', '100', '20000', '0.00', 'Bán theo củ', 'new dishes', 'Hạt giống', 'Hạt giống', 'hatgiong/hatgiong-4.png'),
+(29, 'Dụng cụ làm vườn cỡ trung bình', '3.5', '299', '100000', '20000', 'Bạn theo set', 'new dishes', 'Hạt giống', 'Hạt giống', 'hatgiong/hatgiong-5.png'),
+(30, 'Cẩm chướng', '4.5', '999', '70000', '0.00', 'Bán theo chậu', 'best seller', 'Hoa trang trí', 'Hoa trang trí', 'trangtri/trangtri-1.png'),
+(31, 'Tuyết mai', '4.5', '999', '200000', '0.0', 'Bán theo bó', 'best seller', 'Hoa trang trí', 'Hoa trang trí', 'trangtri/trangtri-2.png'),
+(32, 'Hoa đồng tiền', '4.5', '50', '15000', '0.00', 'Bán theo cành', 'new dishes', 'Hoa trang trí', 'Hoa trang trí', 'trangtri/trangtri-3.png'),
+(33, 'Hồng Billet', '3', '599', '25000', '0.0', 'Bán theo cành', 'seasonal dishes online only', 'Hoa trang trí', 'Hoa trang trí', 'trangtri/trangtri-4.png'),
+(34, 'Hoa oải hương', '4', '199', '180000', '0.00', 'Bán theo bó', 'normal', 'Hoa trang trí', 'Hoa trang trí', 'trangtri/trangtri-5.png'),
+(35, 'Hoa sen', '4', '299', '20000', '0.00', 'Bán  theo cành', 'normal', 'Hoa trang trí', 'Hoa trang trí', 'trangtri/trangtri-6.png'),
+(36, 'Hồng phấn', '4.5', '999', '30000', '5000', 'Bán theo cành', 'normal', 'Hoa trang trí', 'Hoa trang trí', 'trangtri/trangtri-7.png'),
+(37, 'Sen đá long phụng', '4.5', '999', '50000', '0.00', 'Bán theo chậu', 'best seller', 'Sen đá', 'Sen đá', 'senda/senda-1.png'),
+(38, 'Sen đá sỏi hồng', '4.5', '999', '49000', '0.00', 'Bán theo chậu', 'best seller', 'Sen đá', 'Sen đá', 'senda/senda-2.png'),
+(39, 'Sen đá sỏi', '4.5', '599', '60000', '0.00', 'Bán theo chậu', 'new dishes seasonal dishes', 'Sen đá', 'Sen đá', 'senda/senda-3.png'),
+(40, 'sen đá nhím', '4', '999', '80000', '10000', 'Bán theo chậu', 'best seller', 'Sen đá', 'Sen đá', 'senda/senda-4.png'),
+(41, 'Sen đá ngọc', '3.5', '999', '45000', '0.00', 'Bán theo chậu', 'seasonal dishes best seller', 'Sen đá', 'Sen đá', 'senda/senda-5.png'),
+(42, 'Sen đá hoa hồng', '4.5', '9999', '40000', '0.00', 'Bán theo chậu', 'best seller', 'Sen đá', 'Sen đá', 'senda/senda-6.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `user_id` int(11) NOT NULL,
+  `user_name` varchar(255) DEFAULT NULL,
+  `user_email` varchar(255) DEFAULT NULL,
+  `user_phone` varchar(255) DEFAULT NULL,
+  `user_password` varchar(255) DEFAULT NULL,
+  `user_birth` varchar(255) DEFAULT NULL,
+  `user_gender` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `user_name`, `user_email`, `user_phone`, `user_password`, `user_birth`, `user_gender`) VALUES
+(1, 'Anh Thu', 'dongthu1512@gmail.com', '84946830300', '1234123@', '2023-03-21', 'female');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `billdetails`
+--
+ALTER TABLE `billdetails`
+  ADD PRIMARY KEY (`bill_id`,`flower_id`);
+
+--
+-- Indexes for table `billstatus`
+--
+ALTER TABLE `billstatus`
+  ADD PRIMARY KEY (`bill_id`);
+
+--
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`user_id`,`flower_id`);
+
+--
+-- Indexes for table `flower`
+--
+ALTER TABLE `flower`
+  ADD PRIMARY KEY (`flower_id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `flower`
+--
+ALTER TABLE `flower`
+  MODIFY `flower_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
