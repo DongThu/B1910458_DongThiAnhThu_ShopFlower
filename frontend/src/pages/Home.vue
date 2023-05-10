@@ -39,7 +39,7 @@
 
             <router-link @click="scrollToTop()" to="/list" class="box">
                 <img src="../assets/images/phukien/phu-kien1.jpg" alt="">
-                <h3>Phụ kiện</h3>
+                <h3>Dụng cụ</h3>
             </router-link>
 
             <router-link @click="scrollToTop()" to="/list" class="box">
@@ -53,27 +53,18 @@
                 <div class="grid col-md-4">
                     <img src="../assets/images/hoa-oai-huong/oai-huong.jpg" alt="">
                     <div class="content">
-                        <!-- <span>special offer</span>
-                        <h3>upto 50% off</h3> -->
-                        <!-- <router-link @click="scrollToTop()" to="/list" class="btn">Đặt ngay!</router-link> -->
                     </div>
                 </div>
 
                 <div class="grid col-md-4">
                     <img src="../assets/images/hoacuoi/hoacuoi.jpg" alt="">
                     <div class="content center">
-                        <!-- <span>special offer</span>
-                        <h3>upto 25% extra</h3> -->
-                        <!-- <router-link @click="scrollToTop()" to="/list" class="btn">Đặt ngay!</router-link> -->
                     </div>
                 </div>
 
                 <div class="grid col-md-4">
                     <img src="../assets/images/Rose/hong-xanh-5.jpg" alt="">
                     <div class="content">
-                        <!-- <span>limited offer</span>
-                        <h3>100% cashback</h3> -->
-                        <!-- <router-link @click="scrollToTop()" to="/list" class="btn">Đặt ngay!</router-link> -->
                     </div>
                 </div>
 
@@ -99,10 +90,6 @@
                         <img src="../assets/images/serv-1.png" alt="">
                         <h3>Giao hàng nhanh</h3>
                     </div>
-                    <!-- <div class="icons">
-                        <img style="width: 20px;" src="../assets/images/SunFlower/icon-hoa.png" alt="">
-                        <h3>fresh flower</h3>
-                    </div> -->
                     <div class="icons">
                         <img src="../assets/images/serv-3.png" alt="">
                         <h3>Chất lượng tốt</h3>
@@ -223,7 +210,6 @@ export default {
 
 /* home banner */
 .home-banner .row-banner {
-    background: url(../assets/images/row-banner.png) no-repeat;
     height: 45rem;
     background-size: cover;
     background-position: center;
